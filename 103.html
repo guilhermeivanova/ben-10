@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário de Aliens de Ben 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0c457d; /* Cor temática do Ben 10 Clássico */
+            color: #ffffff; /* Texto em branco */
+            transition: background-color 0.5s ease;
+        }
+        h1 {
+            text-align: center;
+            color: #f5a800; /* Cor temática de destaque */
+        }
+        .alien-container {
+            display: none;
+            margin-bottom: 40px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1a85c1; /* Cor temática do Ben 10 Clássico */
+        }
+        .alien-container.active {
+            display: block;
+        }
+        .alien img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .tab {
+            background-color: #1a85c1;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px 10px 0 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .tab.active, .tab:hover {
+            background-color: #0c457d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossário de Aliens de Ben 10</h1>
+
+    <button class="tab" onclick="openTab('quatroBracos')">Quatro Braços</button>
+    <button class="tab" onclick="openTab('chama')">Chama</button>
+    <button class="tab" onclick="openTab('diamante')">Diamante</button>
+    <!-- Adicione botões para outros aliens aqui -->
+
+    <div id="quatroBracos" class="alien-container">
+        <h2>Quatro Braços</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHQNY0nzh8hV1bQyWSVRsWzagPTkDTGTDSA&usqp=CAU">
+        <p>Quatro Braços é um Tetramando da Lua Khoros.</p>
+    </div>
+
+    <div id="chama" class="alien-container">
+        <h2>Chama</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLlnAUK0k4_bvXpZ7u47Q5cQyfAfm9TKUoRA&usqp=CAU">
+        <p>Chama é um Pyronite do planeta Pyros.</p>
+    </div>
+
+    <div id="diamante" class="alien-container">
+        <h2>Diamante</h2>
+        <img src="data:image/jpeg;base64,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">
+        <p>Diamante é um Petrosapien do planeta Petropia.</p>
+    </div>
+
+    <!-- Adicione mais divs "alien-container" conforme necessário para outros aliens -->
+
+    <script>
+        function openTab(alienName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("alien-container");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(alienName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
